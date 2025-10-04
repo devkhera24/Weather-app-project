@@ -1,6 +1,5 @@
-const apiKey = process.env.API_KEY;  // Replace with your OpenWeatherMap API key
+const apiKey = "9b87a6fed05057db1d00983f2a47e978"; 
 
-require('dotenv').config();
 async function getWeather() {
   const city = document.getElementById("cityInput").value.trim();
   const errorMessage = document.getElementById("error-message");
