@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Detector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="weather-app">
+    <h1>🌍 Real-Time Weather Detector</h1>
+   
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button onclick="getWeather()">Search</button>
+    </div>
+   
+    <div id="error-message"></div>
+   
+    <div class="weather-box" id="weatherBox" style="display:none;">
+      <img id="weatherIcon" alt="Weather Icon">
+      <h2 id="cityName"></h2>
+      <p id="description"></p>
+      <h3 id="temperature"></h3>
+      <p>💧 Humidity: <span id="humidity"></span>%</p>
+      <p>🌬️ Wind Speed: <span id="wind"></span> m/s</p>
+      <p>📊 Pressure: <span id="pressure"></span> hPa</p>
+      <p>☀️ UV Index: <span id="uv"></span></p>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
